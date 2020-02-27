@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Form from "./Form";
 import TeamBuilder from "./Member";
+
 function App() {
 
   const [member, setMember] = useState([
@@ -12,6 +13,9 @@ function App() {
       role: ''
     }
   ]);
+
+
+
 
   const addMember = members => {
     const newMember = {
@@ -30,6 +34,7 @@ function App() {
         <h1>Team Builder App</h1>
         <Form form={addMember} />
         <TeamBuilder members={member} />
+         
       </header>
     </div>
   );

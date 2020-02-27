@@ -20,18 +20,18 @@ const Form = props => {
           id='name'
           value={members.name}
           name='name'
-          placeholder='name'
+          placeholder='John Smith'
           type='name'
           onChange={handleChanges}
         />
-        <button type='submit'> Add </button>
+        
         <label htmlFor='email'> Email Address </label>
         <input
           id='email'
           value={members.email}
           name='email'
           type='email'
-          placeholder='example@email.com'
+          placeholder='Example@email.com'
           onChange={handleChanges}
         />
   
@@ -40,10 +40,11 @@ const Form = props => {
           id='role'
           value={members.role}
           name='role'
-          placeholder='Role'
+          placeholder='Web Developer'
           type='role'
           onChange={handleChanges}
         />
+        <button type='submit'> Submit </button>
       </form>
     );
   };

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -27,6 +28,28 @@
 .App-link {
   color: #61dafb;
 }
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: solid 5px #61dafb;
+  padding: 5rem 8rem;
+}
+
+
+form button {
+  height: 3vh;
+  width: 100%;
+  margin-top: 2rem;
+}
+/* .list{
+  display: flex;
+  flex-direction: column;
+  border: solid 5px #61dafb;
+  padding: 5rem 8rem;
+} */
+
 
 @keyframes App-logo-spin {
   from {

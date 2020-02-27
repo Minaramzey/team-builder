@@ -1,6 +1,7 @@
 import React from 'react';
 
 const TeamBuilder = props => {
+  const { setEdit, member, index } = props;
   console.log(props);
 
   return (
@@ -9,8 +10,10 @@ const TeamBuilder = props => {
         return (
           <div className='list' key={list.id}>
             <h2>Name: {list.name}</h2>
-            <p>email: {list.email}</p>
-            <p>role: {list.role}</p>
+            <p>Email: {list.email}</p>
+            <p>Role: {list.role}</p>
+            
+          
           </div>
         );
       })}
@@ -18,3 +21,5 @@ const TeamBuilder = props => {
   );
 };
 export default TeamBuilder
+
+
